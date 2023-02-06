@@ -1,0 +1,269 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="{% static 'style_home.css' %}">
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/e1b0ee98c8.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <title>AutoDash | Home</title>
+    <!-- Favicon -->
+    <link
+      href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8J/fz+Of38/z////8S////BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+/v4I/vz+PgAAAAAAAAAAAAAAAP///yn+/v4CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wMAAAAAAAAAAAAAAACivmz/or5s/wAAAAAAAAAAAAAAAP///wMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACivmz/or5s/6K+bP+ivmz/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACivmz/or5s/6K+bP+ivmz/or5s/6K+bP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+/v4IAAAAAAAAAACivmz/or5s/6K+bP+ivmz/or5s/6K+bP+ivmz/or5s/wAAAAAAAAAAAAAAAAAAAAD///8HAAAAAAAAAACivmz/or5s/6K+bP+ivmz/or5s/6K+bP+ivmz/or5s/6K+bP+ivmz/AAAAAAAAAAAAAAAA////IgAAAACivmz/or5s/6K+bP+ivmz/or5s/6K+bP+ivmz/or5s/6K+bP+ivmz/or5s/6K+bP8AAAAAAAAAAP37/lWivmz/or5s/6K+bP+ivmz/or5s/6K+bP+ivmz/or5s/6K+bP+ivmz/or5s/6K+bP+ivmz/or5s/wAAAAAAAAAAor5s/6K+bP+ivmz/or5s/6K+bP+ivmz/or5s/6K+bP+ivmz/or5s/6K+bP+ivmz/or5s/6K+bP8AAAAAAAAAAKK+bP+ivmz/or5s/6K+bP+ivmz/or5s/6K+bP+ivmz/or5s/6K+bP+ivmz/or5s/6K+bP+ivmz/AAAAAAAAAACivmz/or5s/6K+bP+ivmz/or5s/6K+bP+ivmz/or5s/6K+bP+ivmz/or5s/6K+bP+ivmz/or5s/wAAAAAAAAAAor5s/6K+bP+ivmz/or5s/6K+bP+ivmz/or5s/6K+bP+ivmz/or5s/6K+bP+ivmz/or5s/6K+bP8AAAAAAAAAAAAAAACivmz/or5s/6K+bP+ivmz/or5s/wAAAAAAAAAAor5s/6K+bP+ivmz/or5s/6K+bP8AAAAAAAAAAAAAAAD///8LAAAAAKK+bP+ivmz/or5s/////zP///8M////DAAAAACivmz/or5s/6K+bP8AAAAA////CwAAAAAAAAAAAAAAAAAAAAD+/v4F////Ef7+/g////8CAAAAAAAAAAD+/v4C////D/7+/hH///8FAAAAAAAAAAAAAAAA//8AAP//AAD+fwAA/D8AAPgfAADwDwAA4AcAAMADAACAAQAAgAEAAIABAACAAQAAgAEAAMGDAADjxwAA//8AAA=="
+      rel="icon"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="" class="logo"> .AutoDash </a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <li class="scroll-to-section">
+                  <a href="#top" class="active">Home</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="{% url 'vizualization' %}">Vizualization</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="#projects">Machine Learning</a>
+                </li>
+                <li class="submenu">
+                  <a href="javascript:;">Details</a>
+                  <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">User</a></li>
+                  </ul>
+                </li>
+                <li class="scroll-to-section"><a href="#footer">Contact</a></li>
+              </ul>
+              <a class="menu-trigger">
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="main-banner header-text" id="top">
+      <div class="Modern-Slider">
+        <!-- Item -->
+        <div class="item">
+          <div class="img-fill">
+            <img src="{% static 'images\slide-01.jpg' %}" alt="" />
+            <div class="text-content">
+              <h3>Welcome To AutoDash</h3>
+              <h5>Make analyzing easier</h5>
+              <a href="{% url 'upload' %}" class="main-stroked-button">Upload your data</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- // Item -->
+      </div>
+    </div>
+    <div class="scroll-down scroll-to-section">
+      <a href="#about"><i class="fa fa-arrow-down"></i></a>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+
+    <!-- ***** About Area Starts ***** -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-xs-12">
+            <div class="left-text-content">
+              <div class="section-heading">
+                <h6>About</h6>
+                <h2>Make data easier and fun</h2>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <div class="service-item">
+                    <img
+                      src="{% static 'images\service-item-01.png' %}"
+                      alt=""
+                    />
+                    <h4>Top Notch</h4>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="service-item">
+                    <img
+                      src="{% static 'images\service-item-01.png' %}"
+                      alt=""
+                    />
+                    <h4>Robust</h4>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="service-item">
+                    <img
+                      src="{% static 'images\contact-info-03.png' %}"
+                      alt=""
+                    />
+                    <h4>Reliable</h4>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="service-item">
+                    <img
+                      src="{% static 'images\contact-info-03.png' %}"
+                      alt=""
+                    />
+                    <h4>Up-to-date</h4>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <a href="#" class="main-button-icon">
+                    Learn More <i class="fa fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xs-12">
+            <div class="right-text-content">
+              <p>
+                <a rel="nofollow noopener" href="" target="_parent"
+                  >.AutoDash</a
+                >
+                is a web application created with the Framework of Django as a
+                back-end, a front-end using HTML, CSS, Bootstrap and a little
+                bit of JavaScript. Additional libraries in Python helped to
+                achieve this project such as Pandas, Dash and PyCaret.
+                <br /><br />With a user-friendly interface, .AutoDash makes it
+                easy to understand and analyze your data. Additionally, the
+                application also you to apply machine learning techniques to
+                your data, providing even more insights and understanding.
+                Whether you're a student, researcher, or data professional,
+                .AutoDash is the perfect tool for exploring and understanding
+                your data. <br /><br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Area Ends -->
+    <div class="home-steps">
+      <h2>Discover Our Process</h2>
+      <div class="container-images">
+        <hr />
+        <div class="details">
+          <div class="col-lg-3">
+            <img src="{% static 'images\upload.png' %}" />
+            <h4>Data</h4>
+            <p>Import the dataset of your preference.</p>
+          </div>
+        </div>
+        <div class="details">
+          <div class="col-lg-3">
+            <img src="{% static 'images\market-analysis.png' %}" alt="" />
+            <h4>Vizualization</h4>
+            <p>Vizualize your data by ploting.</p>
+          </div>
+        </div>
+        <div class="details">
+          <div class="col-lg-3">
+            <img src="{% static 'images\web-analytics.png' %}" alt="" />
+            <h4>Machine Learning</h4>
+            <p>Apply classification algorithms.</p>
+          </div>
+        </div>
+        <div class="details">
+          <div class="col-lg-3">
+            <img src="{% static 'images\download_2.png' %}" alt="" />
+            <h4>Download</h4>
+            <p>Get the results.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Footer Start ***** -->
+    <footer>
+      <div class="container" id="footer">
+        <div class="row">
+          <div class="col-lg-6 col-xs-12">
+            <div class="left-text-content">
+              <p>Copyright &copy; 2023 Christina Moraiti</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xs-12">
+            <div class="right-text-content">
+              <ul class="social-icons">
+                <li><p>Follow</p></li>
+                <li>
+                  <a
+                    rel="nofollow"
+                    href="https://www.facebook.com/xristina.mwraiti.12"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    rel="nofollow"
+                    href="https://www.linkedin.com/in/christina-moraiti-3b04331a4/"
+                    ><i class="fa fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a rel="nofollow" href="https://github.com/ClementineM12"
+                    ><i class="fa fa-github"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      $(function () {
+        var selectedClass = "";
+        $("p").click(function () {
+          selectedClass = $(this).attr("data-rel");
+          $("#portfolio").fadeTo(50, 0.1);
+          $("#portfolio div")
+            .not("." + selectedClass)
+            .fadeOut();
+          setTimeout(function () {
+            $("." + selectedClass).fadeIn();
+            $("#portfolio").fadeTo(50, 1);
+          }, 500);
+        });
+      });
+    </script>
+  </body>
+</html>
