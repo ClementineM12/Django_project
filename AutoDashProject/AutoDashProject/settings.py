@@ -42,6 +42,11 @@ INSTALLED_APPS = [
     'upload',
     'login',
     'vizualization',
+
+    # For DASH
+    'channels',
+    'channels_redis',
+    'django_plotly_dash.apps.DjangoPlotlyDashConfig',
 ]
 
 MIDDLEWARE = [
@@ -52,6 +57,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    # Adding additional MIDDLEWARE for DASH
+	'django_plotly_dash.middleware.BaseMiddleware',
 ]
 
 ROOT_URLCONF = 'AutoDashProject.urls'
@@ -129,3 +137,36 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = "login"
+
+
+# DASH
+# ASGI_APPLICATION = "django_dash.routing.application"
+
+# Static content of Plotly components that should
+# be handled by the Django staticfiles infrastructure
+PLOTLY_COMPONENTS = [
+    "dash_core_components",
+    "dash_html_components",
+    "dash_renderer",
+    "dpd_components",
+]
+# Staticfiles finders for locating dash app assets and related files (Dash static files)
+STATICFILES_FINDERS = [
+    "django.contrib.staticfiles.finders.FileSystemFinder",
+    "django.contrib.staticfiles.finders.AppDirectoriesFinder",
+    "django_plotly_dash.finders.DashAssetFinder",
+    "django_plotly_dash.finders.DashComponentFinder",
+]
+
+# Channels config, to use channel layers
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels_redis.core.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [("127.0.0.1", 6379),],
+        },
+    },
+}
+
+#Add X_FRAME_OPTIONS = 'SAMEORIGIN' to settings.py to enable frames within HTML documents
+X_FRAME_OPTIONS = 'SAMEORIGIN'

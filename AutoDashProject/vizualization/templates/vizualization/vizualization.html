@@ -60,7 +60,7 @@
                   <a href="#projects">Machine Learning</a>
                 </li>
                 <li class="submenu">
-                  <a href="javascript:;">Details</a>
+                  <a href="">Details</a>
                   <ul>
                     <li><a href="">About</a></li>
                     <li><a href="">User</a></li>
@@ -79,7 +79,12 @@
     <!-- Box -->
     <div id="main">
       <div class="container-wrapper">
-        <div class="wrapper"></div>
+        <div class="wrapper">
+
+            {%load plotly_dash%} 
+            {% plotly_app name='Dash1' ratio=0.576 %}
+
+        </div>
       </div>
     </div>
   </body>

@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Acme&family=Advent+Pro:wght@100&family=Alegreya+Sans:wght@100&family=Cinzel&family=Dosis:wght@200&family=EB+Garamond&family=Fira+Sans:ital,wght@1,500&family=Heebo:wght@300&family=Hind+Vadodara:wght@700&family=Inconsolata:wght@200;600&family=Josefin+Sans:wght@500&family=Josefin+Slab:wght@200&family=Kavoon&family=Khand:wght@700&family=Lato:wght@900&family=Mukta+Malar:wght@800&family=Nanum+Myeongjo&family=Nunito:wght@200;600&family=Passion+One&family=Poppins:ital,wght@1,200&family=Prompt:wght@700&family=Ropa+Sans&family=Secular+One&family=Signika+Negative:wght@300&family=Sofia+Sans:ital,wght@0,300;1,500&family=Source+Sans+Pro&family=Ubuntu+Mono:wght@700&family=Ubuntu:wght@500&display=swap');
+
+/* Dash */
+#reset-this-root {
+    all: unset;
+}
+
+html,
+body {
+    font-family: 'Hind Vadodara', sans-serif;
+    font-weight: 400;
+    display: absolute;
+}
+
+body {
+    background-color: none;
+}
+
+/* Sidebar */
+
+
+.row {
+    width: 100%;
+    background: transparent;
+    display: flex;
+}
+
+#react-entry-point {
+    background-color: transparent;
+    background: none;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+.sidebar {
+    background: transparent;
+}
+
+.settings {
+    color: #fff;
+    font-size: 20px;
+}
+
+.paragraph {
+    color: #7a7a7a !important;
+    font-family: 'Lato', sans-serif;
+    color: antiquewhite;
+    font-size: 13px;
+    line-height: 1;
+    text-align: justify;
+    display: block;
+    max-width: 960px;
+}
+
+p {
+    padding-left: 8px;
+}
+
+.apply-button {
+    font-size: 13px;
+    border-radius: 25px;
+    padding: 11px 25px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.apply-button:hover {
+    background-color: #B5D5C5;
+    color: #678983;
+    border-color: #B5D5C5;
+}
+
+.col {
+    display: flex;
+    background-color: transparent;
+}
+
+.font-titles {
+    color: #fff;
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#my-cont-picker,
+#my-cat-picker,
+#my-corr-picker {
+    color: #678983;
+    border-color: #B5D5C5;
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 10px;
+}
+
+/* input box */
+.Select-control {
+    padding-top: 5px;
+    border: 1px solid #B5D5C5;
+    background-color: #B5D5C5;
+    background: #B5D5C5 !important;
+    color: #678983;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+.Select-value {
+    background-color: #B5D5C5;
+    border-color: #B5D5C5;
+}
+/* changes the text color of input box */
+.Select-value-label {
+    border-color: #B5D5C5;
+    color: #678983 !important;
+    opacity: 10;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.Select--single>.Select-control .Select-value,
+.Select-placeholder {
+    border: 1px solid #B5D5C5;
+    border-radius: 0px;
+    background-color: #B5D5C5;
+    background: #B5D5C5;
+}
+
+/* dropdown menu options */
+.VirtualizedSelectOption {
+    background-color: #B5D5C5;
+    background: #B5D5C5;
+    color: #678983;
+    border-color: #B5D5C5;
+}
+
+.VirtualizedSelectFocusedOption {
+    background-color: #B5D5C5;
+    opacity: .7;
+    border-color: #B5D5C5;
+}
+
+.Select.has-value.is-clearable.is-searchable.Select--multi {
+    border-color: #B5D5C5;
+    color: #678983 !important;
+    opacity: 10;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* border on focus - default is blue
+ * shadow box around input box.  default is blue
+ */
+.is-focused:not(.is-open)>.Select-control {
+    border-color: #B5D5C5;
+    box-shadow: none;
+    color: #678983;
+    background-color: #B5D5C5;
+    background: #B5D5C5;
+    color: #678983;
+}
+.Select--multi .Select-value-icon {
+    border-right: 1px solid lightsteelblue;
+}
+.Select-clear-zone:hover {
+    color: lightseagreen;
+}
+.Select-arrow-zone, .Select-clear-zone {
+    background: #B5D5C5;
+}
+/* this colors the input box text and x  of multi dropdown*/
+.Select--multi .Select-value {
+    border-color: #B5D5C5;
+    border-radius: 5px;
+    color: lightsteelblue;
+}
+.Select-multi-value-wrapper {
+    font-size: 15px;
+    background-color: #B5D5C5;
+    background: #B5D5C5;
+    color: #678983;
+}
