@@ -4,3 +4,4 @@ Additional libraries in Python helped to achieve this project such as Pandas, Da
 
 https://user-images.githubusercontent.com/106354411/217622261-c9056e98-443f-4652-8109-c9739bc096c8.mp4
 
+The user is able to upload a dataset of preference and visualize differend plots and correlation matrix for a better understanding of the data.
