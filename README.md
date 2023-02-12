@@ -12,3 +12,7 @@ Login/Register | Page
 
 https://user-images.githubusercontent.com/106354411/217624756-2d23f4ae-02a0-40d9-b882-b9779e963da0.mp4
 
+Upload --> Visualization 
+
+https://user-images.githubusercontent.com/106354411/218286146-625ab40c-c923-40b7-a276-b00cfef6426a.mp4
+
